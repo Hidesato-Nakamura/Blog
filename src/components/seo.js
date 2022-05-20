@@ -55,7 +55,7 @@ const SEO = ({ description, lang, meta, title, imageName }) => {
   if (image) {
     relativeOgImagePath = `${site.siteMetadata.siteUrl}${image.node.childImageSharp.fixed.src}`
   } else {
-    relativeOgImagePath = `${site.siteMetadata.siteUrl}ogp_main.png`
+    relativeOgImagePath = `${site.siteMetadata.siteUrl}/ogp_main.png`
   }
   return (
     <Helmet
