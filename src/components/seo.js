@@ -47,10 +47,12 @@ const SEO = ({ description, lang, meta, title, imageName }) => {
   const image = images.edges.find(edge => {
     return edge.node.relativePath.includes(imageName)
   })
-
-  const relativeOgImagePath = image.node.relativePath || defaultImagePath
-  // defaultImage || image
-
+  let relativeOgImagePath
+  if (image) {
+    relativeOgImagePath = image.node.relativePath
+  } else {
+    relativeOgImagePath = defaultImagePath
+  }
   return (
     <Helmet
       htmlAttributes={{
