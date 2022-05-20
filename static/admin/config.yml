@@ -9,7 +9,7 @@ collections:
     label: "Blog"
     folder: "content/blog"
     create: true
-    slug: "{{title}}--{{date}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}"
     preview_path: "blog/{{fields.slug}}"
     fields:
       - {
