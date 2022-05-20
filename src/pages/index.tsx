@@ -54,19 +54,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   function tick() {
     if (add < 2) {
-      // num += 6
-      // const element = (
-      //   <div className="flex flex-wrap" style={{ marginTop: 0 }}>
-      //     {posts.map(({ node }, index) => {
-      //       return index >= num - 6 && index < num ? (
-      //         <article key={node.fields.slug} className="sub-card-block">
-      //           <Card node={node} />
-      //         </article>
-      //       ) : null
-      //     })}
-      //   </div>
-      // )
-      // ReactDOM.render(element, document.getElementById(`readmore${add}`))
       if (isSp) {
         document.getElementById(`readmore${add}`).style.display = "block"
       } else {

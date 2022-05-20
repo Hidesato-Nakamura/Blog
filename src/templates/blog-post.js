@@ -133,6 +133,7 @@ export const pageQuery = graphql`
         contributor
         color
         tags
+        featuredimage
       }
     }
     pageViews(id: { eq: $slug }) {
