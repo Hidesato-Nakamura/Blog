@@ -6,12 +6,12 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `アフェクション ブログ`,
+    title: `群馬県のAR/VR, 3D, WEBアプリの制作会社アフェクションCGmotion`,
     author: {
       name: `Taeko Shizuka`,
-      summary: `who lives and works in Tomioka city building useful things.`,
+      summary: `who lives and works in Takasaki city building useful things.`,
     },
-    description: `3DCG/unity/WEB/などなどの情報を発信します。`,
+    description: `株式会社アフェクションは群馬県を拠点として自治体様、企業様に向けAR/VRアプリ、WEBアプリ、3Dコンテンツを提供しています。本ブログでは制作事例や雑記を掲載します。`,
     siteUrl: `https://affexion-blog.netlify.app/`,
     social: {
       twitter: `affexionAR`,

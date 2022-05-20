@@ -118,18 +118,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           ) : null
         })}
       </div>
-      {/* <div className="flex flex-wrap" style={{ display: "none !important" }}>
-        {posts.map(({ node }, index) => {
-          return index >= num + 12 - 6 && index < num + 12 ? (
-            <article key={node.fields.slug} className="sub-card-block">
-              <Card node={node} />
-            </article>
-          ) : null
-        })}
-      </div> */}
-
-      {/* <div id="readmore0"></div> */}
-      {/* <div id="readmore1"></div> */}
 
       <div className="readmore" id="readmore" onClick={tick}>
         <Image filename="read_more.png" />
