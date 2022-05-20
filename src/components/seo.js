@@ -42,12 +42,13 @@ const SEO = ({ description, lang, meta, title, imageName }) => {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const defaultImage = `${site.siteMetadata.siteUrl}ogp_main.png`
+  const defaultImagePath = `${site.siteMetadata.siteUrl}ogp_main.png`
 
   const image = images.edges.find(edge => {
     return edge.node.relativePath.includes(imageName)
   })
 
+  const relativeOgImagePath = image.node.relativePath || defaultImagePath
   // defaultImage || image
 
   return (
