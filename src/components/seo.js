@@ -18,6 +18,7 @@ const SEO = ({ description, lang, meta, title, imageName }) => {
           siteMetadata {
             title
             description
+            siteUrl
             social {
               twitter
             }
@@ -32,6 +33,11 @@ const SEO = ({ description, lang, meta, title, imageName }) => {
                 fluid(maxWidth: 2000) {
                   ...GatsbyImageSharpFluid_noBase64
                 }
+                fixed {
+                  src
+                  srcSet
+                  originalName
+                }
               }
             }
           }
@@ -42,16 +48,14 @@ const SEO = ({ description, lang, meta, title, imageName }) => {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const defaultImagePath = `${site.siteMetadata.siteUrl}ogp_main.png`
-
   const image = images.edges.find(edge => {
     return edge.node.relativePath.includes(imageName)
   })
   let relativeOgImagePath
   if (image) {
-    relativeOgImagePath = image.node.relativePath
+    relativeOgImagePath = `${site.siteMetadata.siteUrl}${image.node.childImageSharp.fixed.src}`
   } else {
-    relativeOgImagePath = defaultImagePath
+    relativeOgImagePath = `${site.siteMetadata.siteUrl}ogp_main.png`
   }
   return (
     <Helmet
