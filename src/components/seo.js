@@ -48,6 +48,8 @@ const SEO = ({ description, lang, meta, title, imageName }) => {
     return edge.node.relativePath.includes(imageName)
   })
 
+  // defaultImage || image
+
   return (
     <Helmet
       htmlAttributes={{
@@ -74,7 +76,7 @@ const SEO = ({ description, lang, meta, title, imageName }) => {
         },
         {
           property: `og:image`,
-          content: defaultImage || image,
+          content: image.node.relativePath,
         },
         {
           name: `twitter:card`,
