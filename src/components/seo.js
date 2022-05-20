@@ -79,7 +79,7 @@ const SEO = ({ description, lang, meta, title, imageName }) => {
         },
         {
           property: `og:image`,
-          content: image.node.relativePath,
+          content: relativeOgImagePath,
         },
         {
           name: `twitter:card`,
