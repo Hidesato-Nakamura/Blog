@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "http://affexion-blog.netlify.app/*"
+  to = "https://blog.affexion.jp/:splat"
+  force = true
+
+[[redirects]]
+  from = "https://affexion-blog.netlify.app/*"
+  to = "https://blog.affexion.jp/:splat"
+  force = true
