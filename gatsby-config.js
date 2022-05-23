@@ -12,7 +12,7 @@ module.exports = {
       summary: `who lives and works in Takasaki city building useful things.`,
     },
     description: `株式会社アフェクションは群馬県を拠点として自治体様、企業様に向けAR/VRアプリ、WEBアプリ、3Dコンテンツを提供しています。本ブログでは制作事例や雑記を掲載します。`,
-    siteUrl: `https://affexion-blog.netlify.app/`,
+    siteUrl: `https://blog.affexion.jp/`,
     social: {
       twitter: `affexionAR`,
     },
