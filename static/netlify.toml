@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "https://blog.affexion.jp/:splat"
-  status = 200
-  force = true
