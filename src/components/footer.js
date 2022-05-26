@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
         <div className="contact-infomation">
           <a
-            href="mailto:user@dammy.com"
+            href="https://cgmotion.affexion.jp/#inquiry"
             target="_blank"
             rel="noopener noreferrer"
           >
