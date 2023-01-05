@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: main
 locale: "ja"
 media_folder: static/images/uploads
 
